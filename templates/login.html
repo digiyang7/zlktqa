@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+
+{% block title %}登錄{% endblock %}
+
+{% block head %}
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/login_regist.css') }}">
+{% endblock %}
+
+{% block main %}
+    <h3 class="page-title">登錄</h3>
+    <form method="POST">
+        <div class="form-container">
+            <div class="form-group">
+                <input type="text" class="form-control" placeholder="手機號碼" name="telephone">
+            </div>
+            <div class="form-group">
+                <input type="password" class="form-control" placeholder="密碼" name="password">
+            </div>
+            <div class="form-group">
+                <button type="submit" class="btn btn-primary btn-block">登錄</button>
+            </div>
+        </div>
+    </form>
+{% endblock %}

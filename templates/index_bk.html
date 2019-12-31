@@ -1,0 +1,39 @@
+{% extends 'base.html' %}
+
+{% block title %}首頁{% endblock %}
+
+{% block head %}
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/index.css') }}">
+{% endblock %}
+
+{% block main %}
+    <ul class="question-list-group">
+        <li>
+            <div class="avatar-group">
+                <img class="avatar" src="{{ url_for('static',filename='images/avat.ico')}}" alt="">
+            </div>
+            <div class="question-group">
+                <p class="question-title"><a href="#">知了課堂Python學院</a></p>
+                <p class="question-content">首先不是釣魚, 我之前從來沒有提過任何...</p>
+                <div class="question-info">
+                    <span class="question-author">知了課堂</span>
+                    <span class="question-time">2017-06-24 15:36:45</span>
+                </div>
+            </div>
+        </li>
+
+         <li>
+            <div class="avatar-group">
+                <img class="avatar" src="{{ url_for('static',filename='images/avat.ico')}}" alt="">
+            </div>
+            <div class="question-group">
+                <p class="question-title"><a href="#">知了課堂Python學院</a></p>
+                <p class="question-content">首先不是釣魚, 我之前從來沒有提過任何...</p>
+                <div class="question-info">
+                    <span class="question-author">知了課堂</span>
+                    <span class="question-time">2017-06-24 15:36:45</span>
+                </div>
+            </div>
+        </li>
+    </ul>
+{% endblock %}

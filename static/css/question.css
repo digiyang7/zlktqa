@@ -1,0 +1,6 @@
+.form-container{
+    width: 500px;
+    margin: 0 auto;
+    /* button 是一個inline元素, 在父元素指定文本對齊方式的話, inline元素就會依照父元素指定的文本對齊方式來對齊*/
+    text-align: right;
+}

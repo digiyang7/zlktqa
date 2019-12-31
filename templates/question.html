@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+
+{% block title %}註冊{% endblock %}
+
+{% block head %}
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/question.css') }}">
+{% endblock %}
+
+{% block main %}
+    <h3 class="page-title">發佈問答</h3>
+    <form method="POST">
+        <div class="form-container">
+            <div class="form-group">
+                <input type="text" class="form-control" placeholder="請輸入標題" name="title">
+            </div>
+            <div class="form-group">
+                <textarea class="form-control" name="content" rows="5" placeholder="請輸入內容"></textarea>
+            </div>
+            <div class="form-group">
+                <button type="submit" class="btn btn-primary" >立即發佈</button>
+            </div>
+        </div>
+    </form>
+{% endblock %}
